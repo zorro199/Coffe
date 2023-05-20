@@ -21,6 +21,13 @@
 		C198A56D2A18E587007A848F /* R.swift in Sources */ = {isa = PBXBuildFile; fileRef = C198A56C2A18E587007A848F /* R.swift */; };
 		C198A5702A18E5EC007A848F /* UIColor + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = C198A56F2A18E5EC007A848F /* UIColor + Ext.swift */; };
 		C198A5722A18E6A7007A848F /* NavBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C198A5712A18E6A7007A848F /* NavBarController.swift */; };
+		C1E4F5C72A18FB2F006F5FC7 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = C1E4F5C62A18FB2F006F5FC7 /* SnapKit */; };
+		C1E4F5CB2A18FFAE006F5FC7 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E4F5CA2A18FFAE006F5FC7 /* HomeModel.swift */; };
+		C1E4F5CD2A190039006F5FC7 /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E4F5CC2A190039006F5FC7 /* HomeCollectionViewCell.swift */; };
+		C1E4F5CF2A191042006F5FC7 /* UIView  + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E4F5CE2A191042006F5FC7 /* UIView  + Ext.swift */; };
+		C1E4F5D12A191BB6006F5FC7 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E4F5D02A191BB6006F5FC7 /* HomePresenter.swift */; };
+		C1E4F5D32A191CEA006F5FC7 /* HomeBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E4F5D22A191CEA006F5FC7 /* HomeBuilder.swift */; };
+		C1E4F5D72A191E85006F5FC7 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = C1E4F5D62A191E85006F5FC7 /* SDWebImage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +46,11 @@
 		C198A56C2A18E587007A848F /* R.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = R.swift; sourceTree = "<group>"; };
 		C198A56F2A18E5EC007A848F /* UIColor + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor + Ext.swift"; sourceTree = "<group>"; };
 		C198A5712A18E6A7007A848F /* NavBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarController.swift; sourceTree = "<group>"; };
+		C1E4F5CA2A18FFAE006F5FC7 /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
+		C1E4F5CC2A190039006F5FC7 /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
+		C1E4F5CE2A191042006F5FC7 /* UIView  + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView  + Ext.swift"; sourceTree = "<group>"; };
+		C1E4F5D02A191BB6006F5FC7 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		C1E4F5D22A191CEA006F5FC7 /* HomeBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBuilder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,7 +58,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				86D72C822A19101D00131C7E /* SnapKit in Frameworks */,
+
+				C1E4F5D72A191E85006F5FC7 /* SDWebImage in Frameworks */,
+				C1E4F5C72A18FB2F006F5FC7 /* SnapKit in Frameworks */,
+
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,6 +148,10 @@
 			isa = PBXGroup;
 			children = (
 				C198A5502A18DEDB007A848F /* HomeViewController.swift */,
+				C1E4F5CA2A18FFAE006F5FC7 /* HomeModel.swift */,
+				C1E4F5D02A191BB6006F5FC7 /* HomePresenter.swift */,
+				C1E4F5D22A191CEA006F5FC7 /* HomeBuilder.swift */,
+				C1E4F5D42A191E09006F5FC7 /* Catalog */,
 			);
 			path = HomeModule;
 			sourceTree = "<group>";
@@ -166,8 +185,17 @@
 			isa = PBXGroup;
 			children = (
 				C198A56F2A18E5EC007A848F /* UIColor + Ext.swift */,
+				C1E4F5CE2A191042006F5FC7 /* UIView  + Ext.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		C1E4F5D42A191E09006F5FC7 /* Catalog */ = {
+			isa = PBXGroup;
+			children = (
+				C1E4F5CC2A190039006F5FC7 /* HomeCollectionViewCell.swift */,
+			);
+			path = Catalog;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,7 +215,10 @@
 			);
 			name = Coffe;
 			packageProductDependencies = (
-				86D72C812A19101D00131C7E /* SnapKit */,
+
+				C1E4F5C62A18FB2F006F5FC7 /* SnapKit */,
+				C1E4F5D62A191E85006F5FC7 /* SDWebImage */,
+
 			);
 			productName = Coffe;
 			productReference = C198A5492A18DEDB007A848F /* Coffe.app */;
@@ -218,7 +249,10 @@
 			);
 			mainGroup = C198A5402A18DEDB007A848F;
 			packageReferences = (
-				86D72C802A19101D00131C7E /* XCRemoteSwiftPackageReference "SnapKit" */,
+
+				C1E4F5C52A18FB2F006F5FC7 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				C1E4F5D52A191E85006F5FC7 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+
 			);
 			productRefGroup = C198A54A2A18DEDB007A848F /* Products */;
 			projectDirPath = "";
@@ -247,15 +281,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				C198A56D2A18E587007A848F /* R.swift in Sources */,
+
 				86D72C882A19235C00131C7E /* CheckoutCell.swift in Sources */,
+
+				C1E4F5D32A191CEA006F5FC7 /* HomeBuilder.swift in Sources */,
+
 				C198A5512A18DEDB007A848F /* HomeViewController.swift in Sources */,
 				C198A5702A18E5EC007A848F /* UIColor + Ext.swift in Sources */,
+				C1E4F5D12A191BB6006F5FC7 /* HomePresenter.swift in Sources */,
+				C1E4F5CF2A191042006F5FC7 /* UIView  + Ext.swift in Sources */,
 				C198A54D2A18DEDB007A848F /* AppDelegate.swift in Sources */,
 				86D72C8A2A19360E00131C7E /* CheckoutStackView.swift in Sources */,
 				C198A5642A18E2F7007A848F /* PlusViewController.swift in Sources */,
+				C1E4F5CD2A190039006F5FC7 /* HomeCollectionViewCell.swift in Sources */,
 				C198A54F2A18DEDB007A848F /* SceneDelegate.swift in Sources */,
 				C198A5692A18E3AC007A848F /* TabBarController.swift in Sources */,
+
 				86D72C852A19110E00131C7E /* CheckoutViewController.swift in Sources */,
+
+				C1E4F5CB2A18FFAE006F5FC7 /* HomeModel.swift in Sources */,
+
 				C198A5722A18E6A7007A848F /* NavBarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -464,7 +509,9 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		86D72C802A19101D00131C7E /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+
+		C1E4F5C52A18FB2F006F5FC7 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
 			requirement = {
@@ -472,14 +519,29 @@
 				kind = branch;
 			};
 		};
+
+		C1E4F5D52A191E85006F5FC7 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		86D72C812A19101D00131C7E /* SnapKit */ = {
+		C1E4F5C62A18FB2F006F5FC7 /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 86D72C802A19101D00131C7E /* XCRemoteSwiftPackageReference "SnapKit" */;
+			package = C1E4F5C52A18FB2F006F5FC7 /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
 		};
+		C1E4F5D62A191E85006F5FC7 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C1E4F5D52A191E85006F5FC7 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+
 /* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C198A5412A18DEDB007A848F /* Project object */;

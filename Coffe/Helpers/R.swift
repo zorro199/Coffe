@@ -13,11 +13,14 @@ enum R {
     enum Colors {
         static let active = UIColor(hexString: "#EB7A27")
         static let inactive = UIColor(hexString: "#828EB4")
+
 		static let blackTitle = UIColor(hexString: "#353E5A")
 		static let backgroundViewImage = UIColor(hexString: "#D9D9D9")
 		static let backgroundColorView = UIColor(hexString: "#F7F8FC")
 		static let collectionViewCellColor = UIColor(hexString: "#EFF1FA")
 		static let borderImageColor = UIColor(hexString: "#FFA96A")
+
+        static let background = UIColor(hexString: "#D9D9D9")
     }
 	
     enum Strings {
