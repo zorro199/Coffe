@@ -11,6 +11,7 @@ enum R {
     enum Colors {
         static let active = UIColor(hexString: "#EB7A27")
         static let inactive = UIColor(hexString: "#828EB4")
+        static let background = UIColor(hexString: "#D9D9D9")
     }
     enum Strings {
         enum TabBar {
