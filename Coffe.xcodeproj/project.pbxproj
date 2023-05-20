@@ -7,10 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+
+		A12F3D8C2A18F944006E5601 /* DetailModelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12F3D8B2A18F944006E5601 /* DetailModelView.swift */; };
+		A12F3D8E2A190A12006E5601 /* CellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12F3D8D2A190A12006E5601 /* CellView.swift */; };
+		A12F3D902A191F03006E5601 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12F3D8F2A191F03006E5601 /* BaseView.swift */; };
+		A12F3D922A192C8E006E5601 /* QuantityCoffeeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12F3D912A192C8E006E5601 /* QuantityCoffeeView.swift */; };
+		A12F3D942A19465C006E5601 /* TitleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12F3D932A19465C006E5601 /* TitleImage.swift */; };
+
 		86D72C822A19101D00131C7E /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 86D72C812A19101D00131C7E /* SnapKit */; };
 		86D72C852A19110E00131C7E /* CheckoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D72C842A19110E00131C7E /* CheckoutViewController.swift */; };
 		86D72C882A19235C00131C7E /* CheckoutCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D72C872A19235C00131C7E /* CheckoutCell.swift */; };
 		86D72C8A2A19360E00131C7E /* CheckoutStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D72C892A19360E00131C7E /* CheckoutStackView.swift */; };
+
 		C198A54D2A18DEDB007A848F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C198A54C2A18DEDB007A848F /* AppDelegate.swift */; };
 		C198A54F2A18DEDB007A848F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C198A54E2A18DEDB007A848F /* SceneDelegate.swift */; };
 		C198A5512A18DEDB007A848F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C198A5502A18DEDB007A848F /* HomeViewController.swift */; };
@@ -31,9 +39,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+
+		A12F3D8B2A18F944006E5601 /* DetailModelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailModelView.swift; sourceTree = "<group>"; };
+		A12F3D8D2A190A12006E5601 /* CellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellView.swift; sourceTree = "<group>"; };
+		A12F3D8F2A191F03006E5601 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		A12F3D912A192C8E006E5601 /* QuantityCoffeeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuantityCoffeeView.swift; sourceTree = "<group>"; };
+		A12F3D932A19465C006E5601 /* TitleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleImage.swift; sourceTree = "<group>"; };
+
 		86D72C842A19110E00131C7E /* CheckoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutViewController.swift; sourceTree = "<group>"; };
 		86D72C872A19235C00131C7E /* CheckoutCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutCell.swift; sourceTree = "<group>"; };
 		86D72C892A19360E00131C7E /* CheckoutStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutStackView.swift; sourceTree = "<group>"; };
+
 		C198A5492A18DEDB007A848F /* Coffe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Coffe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C198A54C2A18DEDB007A848F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C198A54E2A18DEDB007A848F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -68,6 +84,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+
+		A12F3D8A2A18F91F006E5601 /* DetailModel */ = {
+			isa = PBXGroup;
+			children = (
+				A12F3D8B2A18F944006E5601 /* DetailModelView.swift */,
+				A12F3D932A19465C006E5601 /* TitleImage.swift */,
+				A12F3D8D2A190A12006E5601 /* CellView.swift */,
+				A12F3D912A192C8E006E5601 /* QuantityCoffeeView.swift */,
+				A12F3D8F2A191F03006E5601 /* BaseView.swift */,
+			);
+			path = DetailModel;
+
 		86D72C832A1910F600131C7E /* Checkout */ = {
 			isa = PBXGroup;
 			children = (
@@ -84,6 +112,7 @@
 				86D72C892A19360E00131C7E /* CheckoutStackView.swift */,
 			);
 			path = Cell;
+
 			sourceTree = "<group>";
 		};
 		C198A5402A18DEDB007A848F = {
@@ -137,7 +166,11 @@
 		C198A5622A18E1E7007A848F /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+
+				A12F3D8A2A18F91F006E5601 /* DetailModel */,
+
 				86D72C832A1910F600131C7E /* Checkout */,
+
 				C198A5652A18E31A007A848F /* HomeModule */,
 				C198A5662A18E34E007A848F /* PlusModule */,
 			);
@@ -282,9 +315,13 @@
 			files = (
 				C198A56D2A18E587007A848F /* R.swift in Sources */,
 
+				A12F3D942A19465C006E5601 /* TitleImage.swift in Sources */,
+
+
 				86D72C882A19235C00131C7E /* CheckoutCell.swift in Sources */,
 
 				C1E4F5D32A191CEA006F5FC7 /* HomeBuilder.swift in Sources */,
+
 
 				C198A5512A18DEDB007A848F /* HomeViewController.swift in Sources */,
 				C198A5702A18E5EC007A848F /* UIColor + Ext.swift in Sources */,
@@ -293,7 +330,11 @@
 				C198A54D2A18DEDB007A848F /* AppDelegate.swift in Sources */,
 				86D72C8A2A19360E00131C7E /* CheckoutStackView.swift in Sources */,
 				C198A5642A18E2F7007A848F /* PlusViewController.swift in Sources */,
+
+				A12F3D8C2A18F944006E5601 /* DetailModelView.swift in Sources */,
+
 				C1E4F5CD2A190039006F5FC7 /* HomeCollectionViewCell.swift in Sources */,
+
 				C198A54F2A18DEDB007A848F /* SceneDelegate.swift in Sources */,
 				C198A5692A18E3AC007A848F /* TabBarController.swift in Sources */,
 
@@ -302,6 +343,9 @@
 				C1E4F5CB2A18FFAE006F5FC7 /* HomeModel.swift in Sources */,
 
 				C198A5722A18E6A7007A848F /* NavBarController.swift in Sources */,
+				A12F3D922A192C8E006E5601 /* QuantityCoffeeView.swift in Sources */,
+				A12F3D902A191F03006E5601 /* BaseView.swift in Sources */,
+				A12F3D8E2A190A12006E5601 /* CellView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
