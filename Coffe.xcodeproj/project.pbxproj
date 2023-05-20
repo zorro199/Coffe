@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		86D72C822A19101D00131C7E /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 86D72C812A19101D00131C7E /* SnapKit */; };
+		86D72C852A19110E00131C7E /* CheckoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D72C842A19110E00131C7E /* CheckoutViewController.swift */; };
+		86D72C882A19235C00131C7E /* CheckoutCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D72C872A19235C00131C7E /* CheckoutCell.swift */; };
+		86D72C8A2A19360E00131C7E /* CheckoutStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D72C892A19360E00131C7E /* CheckoutStackView.swift */; };
 		C198A54D2A18DEDB007A848F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C198A54C2A18DEDB007A848F /* AppDelegate.swift */; };
 		C198A54F2A18DEDB007A848F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C198A54E2A18DEDB007A848F /* SceneDelegate.swift */; };
 		C198A5512A18DEDB007A848F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C198A5502A18DEDB007A848F /* HomeViewController.swift */; };
@@ -27,6 +31,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		86D72C842A19110E00131C7E /* CheckoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutViewController.swift; sourceTree = "<group>"; };
+		86D72C872A19235C00131C7E /* CheckoutCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutCell.swift; sourceTree = "<group>"; };
+		86D72C892A19360E00131C7E /* CheckoutStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutStackView.swift; sourceTree = "<group>"; };
 		C198A5492A18DEDB007A848F /* Coffe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Coffe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C198A54C2A18DEDB007A848F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C198A54E2A18DEDB007A848F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,14 +58,34 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+
 				C1E4F5D72A191E85006F5FC7 /* SDWebImage in Frameworks */,
 				C1E4F5C72A18FB2F006F5FC7 /* SnapKit in Frameworks */,
+
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		86D72C832A1910F600131C7E /* Checkout */ = {
+			isa = PBXGroup;
+			children = (
+				86D72C862A1922D000131C7E /* Cell */,
+				86D72C842A19110E00131C7E /* CheckoutViewController.swift */,
+			);
+			path = Checkout;
+			sourceTree = "<group>";
+		};
+		86D72C862A1922D000131C7E /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				86D72C872A19235C00131C7E /* CheckoutCell.swift */,
+				86D72C892A19360E00131C7E /* CheckoutStackView.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		C198A5402A18DEDB007A848F = {
 			isa = PBXGroup;
 			children = (
@@ -110,6 +137,7 @@
 		C198A5622A18E1E7007A848F /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				86D72C832A1910F600131C7E /* Checkout */,
 				C198A5652A18E31A007A848F /* HomeModule */,
 				C198A5662A18E34E007A848F /* PlusModule */,
 			);
@@ -187,8 +215,10 @@
 			);
 			name = Coffe;
 			packageProductDependencies = (
+
 				C1E4F5C62A18FB2F006F5FC7 /* SnapKit */,
 				C1E4F5D62A191E85006F5FC7 /* SDWebImage */,
+
 			);
 			productName = Coffe;
 			productReference = C198A5492A18DEDB007A848F /* Coffe.app */;
@@ -219,8 +249,10 @@
 			);
 			mainGroup = C198A5402A18DEDB007A848F;
 			packageReferences = (
+
 				C1E4F5C52A18FB2F006F5FC7 /* XCRemoteSwiftPackageReference "SnapKit" */,
 				C1E4F5D52A191E85006F5FC7 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+
 			);
 			productRefGroup = C198A54A2A18DEDB007A848F /* Products */;
 			projectDirPath = "";
@@ -249,17 +281,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				C198A56D2A18E587007A848F /* R.swift in Sources */,
+
+				86D72C882A19235C00131C7E /* CheckoutCell.swift in Sources */,
+
 				C1E4F5D32A191CEA006F5FC7 /* HomeBuilder.swift in Sources */,
+
 				C198A5512A18DEDB007A848F /* HomeViewController.swift in Sources */,
 				C198A5702A18E5EC007A848F /* UIColor + Ext.swift in Sources */,
 				C1E4F5D12A191BB6006F5FC7 /* HomePresenter.swift in Sources */,
 				C1E4F5CF2A191042006F5FC7 /* UIView  + Ext.swift in Sources */,
 				C198A54D2A18DEDB007A848F /* AppDelegate.swift in Sources */,
+				86D72C8A2A19360E00131C7E /* CheckoutStackView.swift in Sources */,
 				C198A5642A18E2F7007A848F /* PlusViewController.swift in Sources */,
 				C1E4F5CD2A190039006F5FC7 /* HomeCollectionViewCell.swift in Sources */,
 				C198A54F2A18DEDB007A848F /* SceneDelegate.swift in Sources */,
 				C198A5692A18E3AC007A848F /* TabBarController.swift in Sources */,
+
+				86D72C852A19110E00131C7E /* CheckoutViewController.swift in Sources */,
+
 				C1E4F5CB2A18FFAE006F5FC7 /* HomeModel.swift in Sources */,
+
 				C198A5722A18E6A7007A848F /* NavBarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -468,7 +509,9 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+
 		C1E4F5C52A18FB2F006F5FC7 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
 			requirement = {
@@ -476,6 +519,7 @@
 				kind = branch;
 			};
 		};
+
 		C1E4F5D52A191E85006F5FC7 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
@@ -497,6 +541,7 @@
 			package = C1E4F5D52A191E85006F5FC7 /* XCRemoteSwiftPackageReference "SDWebImage" */;
 			productName = SDWebImage;
 		};
+
 /* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C198A5412A18DEDB007A848F /* Project object */;

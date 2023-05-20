@@ -7,12 +7,22 @@
 
 import UIKit
 
+
 enum R {
+	
     enum Colors {
         static let active = UIColor(hexString: "#EB7A27")
         static let inactive = UIColor(hexString: "#828EB4")
+
+		static let blackTitle = UIColor(hexString: "#353E5A")
+		static let backgroundViewImage = UIColor(hexString: "#D9D9D9")
+		static let backgroundColorView = UIColor(hexString: "#F7F8FC")
+		static let collectionViewCellColor = UIColor(hexString: "#EFF1FA")
+		static let borderImageColor = UIColor(hexString: "#FFA96A")
+
         static let background = UIColor(hexString: "#D9D9D9")
     }
+	
     enum Strings {
         enum TabBar {
             static func title(for tab: Tabs) -> String {
@@ -21,12 +31,15 @@ enum R {
                     return "Home"
                 case .addOrder:
                     return "Add order"
-                }
+				case .checkout:
+					return "Checkout"
+				}
             }
         }
         enum NavigationTitle {
             static let home = "Home"
             static let addOrder = "Add order"
+			static let checkout = "Checkout"
         }
     }
     enum Images {
@@ -37,7 +50,9 @@ enum R {
                     return UIImage(named: "home") ?? UIImage()
                 case .addOrder:
                     return UIImage(named: "plus") ?? UIImage()
-                }
+				case .checkout:
+					return UIImage(named: "Cart") ?? UIImage()
+				}
             }
         }
     }

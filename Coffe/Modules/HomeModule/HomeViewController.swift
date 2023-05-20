@@ -34,6 +34,7 @@ class HomeViewController: UIViewController {
         collectionView.dataSource = self
     }
 
+
     func createLayout() -> UICollectionViewLayout {
         // section -> group -> items -> size
         let sizeItem = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0),
@@ -49,6 +50,7 @@ class HomeViewController: UIViewController {
         return layout
     }
     
+
 }
 
 extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelegate {
