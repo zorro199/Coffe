@@ -17,16 +17,11 @@ final class TabBarController: UITabBarController {
 
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
-        // You can to call a viewDidLoad
         configure()
     }
 
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
-    }
-
-    func switchTo(tab: Tabs) {
-        selectedIndex = tab.rawValue
     }
 
     private func configure() {
@@ -35,6 +30,8 @@ final class TabBarController: UITabBarController {
         tabBar.backgroundColor = .white
         tabBar.layer.borderWidth = 0.5
         tabBar.layer.masksToBounds = true
+        tabBar.isTranslucent = false
+        UITabBar.appearance().barTintColor = .white
         //set NavigationControllers
         let controllers: [NavBarController] = Tabs.allCases.map { tab in
             let controller = NavBarController(rootViewController: getController(for: tab))
@@ -49,7 +46,7 @@ final class TabBarController: UITabBarController {
     private func getController(for tab: Tabs) -> UIViewController {
         switch tab {
         case .home:
-            return HomeViewController()
+            return HomeBuilder.createHomeModule()
         case .addOrder:
             return PlusViewController()
         }
