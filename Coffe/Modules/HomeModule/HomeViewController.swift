@@ -15,6 +15,5 @@ class HomeViewController: UIViewController {
         title = R.Strings.NavigationTitle.home
     }
 
-
 }
 

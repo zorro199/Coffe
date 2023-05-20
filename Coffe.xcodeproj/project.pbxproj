@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		86D72C822A19101D00131C7E /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 86D72C812A19101D00131C7E /* SnapKit */; };
+		86D72C852A19110E00131C7E /* CheckoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D72C842A19110E00131C7E /* CheckoutViewController.swift */; };
+		86D72C882A19235C00131C7E /* CheckoutCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D72C872A19235C00131C7E /* CheckoutCell.swift */; };
+		86D72C8A2A19360E00131C7E /* CheckoutStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D72C892A19360E00131C7E /* CheckoutStackView.swift */; };
 		C198A54D2A18DEDB007A848F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C198A54C2A18DEDB007A848F /* AppDelegate.swift */; };
 		C198A54F2A18DEDB007A848F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C198A54E2A18DEDB007A848F /* SceneDelegate.swift */; };
 		C198A5512A18DEDB007A848F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C198A5502A18DEDB007A848F /* HomeViewController.swift */; };
@@ -20,6 +24,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		86D72C842A19110E00131C7E /* CheckoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutViewController.swift; sourceTree = "<group>"; };
+		86D72C872A19235C00131C7E /* CheckoutCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutCell.swift; sourceTree = "<group>"; };
+		86D72C892A19360E00131C7E /* CheckoutStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutStackView.swift; sourceTree = "<group>"; };
 		C198A5492A18DEDB007A848F /* Coffe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Coffe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C198A54C2A18DEDB007A848F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C198A54E2A18DEDB007A848F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,12 +46,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86D72C822A19101D00131C7E /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		86D72C832A1910F600131C7E /* Checkout */ = {
+			isa = PBXGroup;
+			children = (
+				86D72C862A1922D000131C7E /* Cell */,
+				86D72C842A19110E00131C7E /* CheckoutViewController.swift */,
+			);
+			path = Checkout;
+			sourceTree = "<group>";
+		};
+		86D72C862A1922D000131C7E /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				86D72C872A19235C00131C7E /* CheckoutCell.swift */,
+				86D72C892A19360E00131C7E /* CheckoutStackView.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		C198A5402A18DEDB007A848F = {
 			isa = PBXGroup;
 			children = (
@@ -96,6 +122,7 @@
 		C198A5622A18E1E7007A848F /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				86D72C832A1910F600131C7E /* Checkout */,
 				C198A5652A18E31A007A848F /* HomeModule */,
 				C198A5662A18E34E007A848F /* PlusModule */,
 			);
@@ -159,6 +186,9 @@
 			dependencies = (
 			);
 			name = Coffe;
+			packageProductDependencies = (
+				86D72C812A19101D00131C7E /* SnapKit */,
+			);
 			productName = Coffe;
 			productReference = C198A5492A18DEDB007A848F /* Coffe.app */;
 			productType = "com.apple.product-type.application";
@@ -187,6 +217,9 @@
 				Base,
 			);
 			mainGroup = C198A5402A18DEDB007A848F;
+			packageReferences = (
+				86D72C802A19101D00131C7E /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = C198A54A2A18DEDB007A848F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -214,12 +247,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				C198A56D2A18E587007A848F /* R.swift in Sources */,
+				86D72C882A19235C00131C7E /* CheckoutCell.swift in Sources */,
 				C198A5512A18DEDB007A848F /* HomeViewController.swift in Sources */,
 				C198A5702A18E5EC007A848F /* UIColor + Ext.swift in Sources */,
 				C198A54D2A18DEDB007A848F /* AppDelegate.swift in Sources */,
+				86D72C8A2A19360E00131C7E /* CheckoutStackView.swift in Sources */,
 				C198A5642A18E2F7007A848F /* PlusViewController.swift in Sources */,
 				C198A54F2A18DEDB007A848F /* SceneDelegate.swift in Sources */,
 				C198A5692A18E3AC007A848F /* TabBarController.swift in Sources */,
+				86D72C852A19110E00131C7E /* CheckoutViewController.swift in Sources */,
 				C198A5722A18E6A7007A848F /* NavBarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -426,6 +462,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		86D72C802A19101D00131C7E /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				branch = develop;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		86D72C812A19101D00131C7E /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 86D72C802A19101D00131C7E /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C198A5412A18DEDB007A848F /* Project object */;
 }

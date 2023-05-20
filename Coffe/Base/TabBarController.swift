@@ -11,6 +11,7 @@ import UIKit
 enum Tabs: Int, CaseIterable {
     case home
     case addOrder
+	case checkout
 }
 
 final class TabBarController: UITabBarController {
@@ -52,6 +53,8 @@ final class TabBarController: UITabBarController {
             return HomeViewController()
         case .addOrder:
             return PlusViewController()
-        }
+		case .checkout:
+			return CheckoutViewController()
+		}
     }
 }
